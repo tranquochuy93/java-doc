@@ -136,6 +136,22 @@ response.setCharacterEncoding("UTF-8");
  response.getWriter().println;
  response.setContentType("text/html; charset=UTF-8"); // japanese
 ```
+## Spring MVC
+- @Service là một annotation, nó được sử dụng để chú thích trên một class để nói với Spring rằng class đó là một Spring BEAN
+
+- @Autowired được chú thích trên một trường (field) để nói với Spring rằng hãy tiêm (inject) giá trị vào cho trường đó. Chú ý: Từ tiêm ở đây có ý giống với gán giá trị cho trường đó.
+
+- @Repository là một annotation, nó được sử dụng để chú thích trên một class để nói với Spring rằng class này là một Spring BEAN.
+
+- @Component là một annotation, nó được chú thích trên một class để nói với Spring rằng class này là một Spring BEAN.
+
+- Không có sự khác biệt về cách sử dụng của @Service, @Component và @Repository
+
+- @Configuration là một annotation, nó được chú thích trên một class, class này sẽ định nghĩa các Spring BEAN.
+ 
+- @ComponentScan - Nói cho Spring các package để tìm kiếm các Spring BEAN khác, Spring sẽ quét (scan) các package đó để tìm kiếm.
+
+- Các Spring BEAN được tạo ra sẽ được quản lý trong Spring IoC Container (Bộ chứa Spring IoC).
 
 
 
