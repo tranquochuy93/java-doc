@@ -1,6 +1,6 @@
 ## Trick
 
-````java
+```java
 public class HelloWorld{
 
      public static void main(String []args){
@@ -13,7 +13,6 @@ public class HelloWorld{
     }
 }
 ```
-
 ## JDK
 - JDK (  JRE ( JVM +  Các thư viện phục vụ cho runtime của JVM ) + Development Tool: javac, java )
 - JVM ( Classloader tải class file + Memory Area ( Class Area + Heap + Stack + ... )  + Execution Engine ( Virtual Processor + interpreter để đọc bytecode và thực thi )
