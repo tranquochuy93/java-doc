@@ -1,3 +1,19 @@
+## Trick
+
+````java
+public class HelloWorld{
+
+     public static void main(String []args){
+        System.out.println(roundAvoid(0.00000000001, 2)); // 0.01
+     }
+     
+     public static double roundAvoid(double value, int places) {
+        double scale = Math.pow(10, places);
+        return Math.ceil(value * scale) / scale;
+    }
+}
+```
+
 ## JDK
 - JDK (  JRE ( JVM +  Các thư viện phục vụ cho runtime của JVM ) + Development Tool: javac, java )
 - JVM ( Classloader tải class file + Memory Area ( Class Area + Heap + Stack + ... )  + Execution Engine ( Virtual Processor + interpreter để đọc bytecode và thực thi )
